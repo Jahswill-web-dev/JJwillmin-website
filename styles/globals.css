@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    scroll-behavior: "smooth";
+}
+
+.bg-hero{
+    background-image: url('../public/images/image-4.png');
+}
+.bg-about{
+    background-image: url('../public/images/about-image.png');
+}
