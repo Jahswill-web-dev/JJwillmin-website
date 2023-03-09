@@ -4,8 +4,8 @@ import { React, useEffect, useState } from 'react';
 export default function Nav() {
 
     const [nav, setNav] = useState(false);
-    const [color, setColor] = useState('transparent');
-    const [textColor, setTextColor] = useState('white');
+    const [color, setColor] = useState('white');
+    const [textColor, setTextColor] = useState('#1E2A40');
 
     const handleNav = () => {
         setNav(!nav);
@@ -13,11 +13,11 @@ export default function Nav() {
     useEffect(() => {
         const changeColor = () => {
             if (window.scrollY >= 90) {
-                setColor('#ffff');
-                setTextColor('#1E2A40')
-            }else{
-                setColor('transparent')
+                setColor('#1E2A40');
                 setTextColor('white')
+            }else{
+                setColor('white')
+                setTextColor('#1E2A40')
             }
         }
         window.addEventListener('scroll', changeColor)
@@ -48,24 +48,24 @@ export default function Nav() {
                         <i className="fa-solid fa-x"></i>
                     </div>
                     <ul className="">
-                        <li className="nav-item py-2 px-4 text-3xl hover:text-gray-500"><Link href="/#about">ABOUT</Link></li>
-                        <li className="nav-item py-2 px-4 text-3xl hover:text-gray-500"><Link href="/#services">SERVICES</Link></li>
-                        <li className="nav-item py-2 px-4 text-3xl hover:text-gray-500"><Link href="/#project">PROJECTS</Link></li>
-                        <li className="nav-item py-2 px-4 text-3xl hover:text-gray-500"><Link href="/#contact">CONTACT US</Link></li>
+                        <li className="nav-item py-2 px-4 text-3xl hover:text-grey"><Link href="/#about">ABOUT</Link></li>
+                        {/* <li className="nav-item py-2 px-4 text-3xl hover:text-grey"><Link href="/#services">SERVICES</Link></li> */}
+                        <li className="nav-item py-2 px-4 text-3xl hover:text-grey"><Link href="/#project">PROJECTS</Link></li>
+                        <li className="nav-item py-2 px-4 text-3xl hover:text-grey"><Link href="/#contact">CONTACT US</Link></li>
                     </ul>
 
                 </div>
             </nav>
             {/* desktop Nav */}
-            <div className="hidden sm:flex justify-between items-center py-2 z-[3] mx-auto w-full fixed px-10" style={{ backgroundColor: `${color}`, color: `${textColor}` }}>
+            <div className="hidden sm:flex justify-between items-center py-2 z-10 mx-auto w-full fixed px-10" style={{ backgroundColor: `${color}`, color: `${textColor}` }}>
                 <div className="logo font-bold mt-1 flex items-center">
                             <Link href="/">J.J.WILLMIN</Link>
                 </div>
                 <ul className="flex gap-5 items-center ">
-                        <li className="nav-item hover:text-gray-500"><Link href="/#about">ABOUT</Link></li>
-                        <li className="nav-item hover:text-gray-500"><Link href="/#services">SERVICES</Link></li>
-                        <li className="nav-item hover:text-gray-500"><Link href="/#project">PROJECTS</Link></li>
-                        <li className="nav-item hover:text-gray-500"><Link href="/#contact">CONTACT US</Link></li>
+                        <li className="nav-item hover:text-blue-900"><Link href="/#about">ABOUT</Link></li>
+                        {/* <li className="nav-item hover:text-blue-900"><Link href="/#services">SERVICES</Link></li> */}
+                        <li className="nav-item hover:text-blue-900"><Link href="/#project">PROJECTS</Link></li>
+                        <li className="nav-item hover:text-blue-900"><Link href="/#contact">CONTACT US</Link></li>
                     </ul>
             </div>
         </>

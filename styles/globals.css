@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: "smooth";
-}
+
 
 .bg-hero{
     background-image: url('../public/images/image-4.png');
 }
 .bg-about{
-    background-image: url('../public/images/image-5.png');
+    background-image: url('../public/images/logo.jpeg');
+}
+.bg-mission{
+    background-image: url('../public/images/image-3.png');
+}
+
+.bg-quality{
+    background-image: url('../public/images/image-4.png');
+}
+
+.bg-values{
+    background-image: url('../public/images/image-23.png');
+}
+.bg-contact{
+    background-image: url('../public/images/contact.jpg');
 }

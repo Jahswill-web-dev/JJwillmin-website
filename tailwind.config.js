@@ -10,7 +10,12 @@ module.exports = {
       screens: {
       'xs': '375px',
       ...defaultTheme.screens,
-    },colors: {
+    },
+    screens: {
+      'lg': '1000px',
+      // => @media (min-width: 992px) { ... }
+    },
+    colors: {
     primary: '#1E2A40',
     secondary: '#BE183E',
     // ...
