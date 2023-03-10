@@ -78,6 +78,7 @@ const Page = () => {
                         width={450}
                         height={400}
                         class="sm:max-w-[50% ] sm:w-[50%] sm:p-[3rem]"
+                        alt=""
                     />
                 </div>
                 {/* gallery  */}
@@ -85,6 +86,7 @@ const Page = () => {
                 <div className="px-[2.5rem] text-primary flex flex-row flex-wrap">
                     {images?.map(image => <Image
                         src={image}
+                        alt=""
                         width={500}
                         height={500}
                         className="py-[1rem] px-5 "

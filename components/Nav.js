@@ -30,7 +30,7 @@ export default function Nav() {
             <nav style={{ backgroundColor: `${color}`,color: `${textColor}`}} className="navbar bg-white text-xl mx-auto w-full fixed sm:hidden z-10">
                 <div className="flex justify-between max-w-[90%] mx-auto p-2">
                     <div className="logo  font-bold mt-1">
-                        <a href="/">JJWILLMIN</a>
+                        <Link href="/">JJWILLMIN</Link>
                     </div>
                     <div onClick={handleNav} className="hamburger text-3xl sm:hidden ">
                         <i className="fa-solid fa-bars"></i>
