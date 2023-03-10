@@ -84,8 +84,9 @@ const Page = () => {
                 {/* gallery  */}
                 {/* use chatgpt for css grid */}
                 <div className="px-[2.5rem] text-primary flex flex-row flex-wrap">
-                    {images?.map(image => <Image
+                    {images?.map((image, index) => <Image
                         src={image}
+                        key={index}
                         alt=""
                         width={500}
                         height={500}
