@@ -19,9 +19,9 @@ export default function Project({ face, link, name, id, imageUrl }) {
                loading="lazy"
                alt="picture of one of JJWILLMIN's projects"
                className=""
-               width={500}
+               width={500}  
                height={500}
-               style={{ maxWidth: '100%', height: 'auto' }}
+               // style={{ maxWidth: '100%', height: 'auto' }}
             />
          </div>
 
